@@ -126,7 +126,7 @@ option {
   border-radius: var(--border-radius);
   padding: 0.15rem;
   text-transform: capitalize;
-  margin: 0.3rem;
+  margin: 0.3rem 0;
   display: none;
 }
 .warning {
@@ -136,7 +136,7 @@ option {
   border-radius: var(--border-radius);
   padding: 0.15rem;
   text-transform: capitalize;
-  margin: 0.3rem;
+  margin: 0.3rem 0;
   display: none;
 }
 .danger {
@@ -146,7 +146,7 @@ option {
   border-radius: var(--border-radius);
   padding: 0.15rem;
   text-transform: capitalize;
-  margin: 0.3rem;
+  margin: 0.3rem 0;
   display: none;
 }
 
@@ -227,6 +227,10 @@ form button:hover {
   transform: rotate(180deg);
 }
 
+.toggle-btn:hover {
+  cursor: pointer;
+}
+
 .transactions {
   margin: 0.3rem 0;
   height: 0;
@@ -242,6 +246,7 @@ form button:hover {
 .transaction {
   margin: 6px 0;
   display: flex;
+  cursor: default;
 }
 
 .indicator {
@@ -260,4 +265,15 @@ form button:hover {
   color: rgb(43, 39, 15);
   border-radius: 5px;
   transform: translateY(3px);
+}
+
+.timestamp {
+  margin-left: auto;
+  color: var(--secondary-color);
+  font-size: 0.6rem;
+}
+
+.gas-fee-note {
+  color: var(--accent-color);
+  font-size: 0.65rem;
 }
