@@ -15,7 +15,7 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [showTransactions, setShowTransactions] = useState(false);
   const [address, setAddress] = useState("");
-  const [amount, setAmount] = useState(null);
+  const [amount, setAmount] = useState("");
 
   useEffect(() => {
     if (state.error.isError) {
